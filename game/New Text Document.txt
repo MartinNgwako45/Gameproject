@@ -1,0 +1,199 @@
+
+player = pygame.image.load("image.png")
+enemy = pygame.image.load("enemy.png")
+monster = pygame.image.load("enemy.jpg")
+player = pygame.image.load("enemy.jpg")
+
+
+image_height = player.get_height()
+image_height = player.get_width()
+
+enemy_height = enemy.get_height()
+enemy_width  = enemy.get_width()
+
+monster_height = monstet.get_height()
+monster_width = moster.get_width()
+
+player_height = player.get_height()
+player_height = player.get_width()
+
+print("This is the height of the player mage: " +str(image_height))
+print("This is the height of the enemy image: " +str(image_width))
+
+playerXPosition = 100
+plaerYPosition = 50
+
+
+enemyXPosition = screen_width
+enemyYPosition = randon.radint(0, screen_height - enemy_height)
+
+
+keyUp= False
+keyDown = False
+
+
+
+
+
+while 1:
+
+    screen.fill(0)
+    screen.blit(player, (playerXPosition, playerYPosition))
+    svreen,blit(enemy,(enemyXPOsition,  enemyYPosition))
+
+    pygame.display.flip()
+
+
+
+    for event in pygame.event.get():
+
+
+
+        if even.type == pygame.Quite:
+            pygame.quite()
+            exit (0)
+
+        if event.type == pygame.KEYUP:
+
+
+
+            if event.key == pygame.K_UP:
+                   keyUp = True
+            if event.key == pygame.K_DOWN:
+                keyDown: = True
+            if event.key == pygame.K_RIGHT:
+                keyRight = True
+            if event.key == pygame.K_LEFT:
+                 keyLeft = True
+
+
+
+
+
+
+
+        if keyUp == True:
+            if playerYPosition > 0 :
+                playerYPosition -= 1
+        if keyDown == True:
+            if playerYPosition < screen_height - image_height:
+                playerXPosition += 1
+        if keyRight == True:
+            if playerXPosition > 0 :
+                playerXPosition -= 1
+        if keyLeft == True :
+            if playerXPosition > 0 :
+                playerXPostion += 1
+
+
+
+
+
+
+
+
+        palyerBox = pygame.React(player.get_rect())
+
+
+
+
+
+        playerBox.top = playerXPostion
+        playerBox.left = playerXPosition
+
+
+
+        enemyBox = .React (enemy.get_rect())
+        enemyBox.top = enemyYPosition
+        enemy.Box.left = enemyXPosition
+
+        monsterBox = .React (monster.get_rect())
+        momsterBox.bottom = monsterYPosition
+        monsterBox.left = monsterXPosition
+
+        playerBox = .React (player.get_rect())
+        playerBox.middle = playerYPosition
+        playerBox.left = playerXPosition
+
+
+        if enemyXPosition < 0 - enemy_width
+
+
+            print("you win")
+
+
+            pygame.quite
+
+
+            exit(0)
+
+            enemyXPosotion -= 0.15
+            monsterXPostion -= 0.15
+            playerXPosotion -= 0.15
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
